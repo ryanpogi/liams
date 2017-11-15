@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+.container {
+  width: 40%;
+  margin: auto;
+}
+
+.header {
+  background-color: #009688;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  box-shadow: inset 5px 5px 30px -10px rgba(0, 0, 0, 0.53);
+}
+.green .header {
+  background-color: #388E3C;
+}
+.violet .header {
+  background-color: #7c51c8;
+}
+.blue .header {
+  background-color: #3f51b5;
+}
+
+.header__title {
+  color: #fff;
+  padding-top: 20px;
+  font-size: 35px;
+}
+
+.header__input {
+  width: 60%;
+  margin-bottom: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.header__button {
+  border: none;
+  padding: 10px;
+  width: 120px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+.header__button:hover {
+  background-color: #bdbdbd;
+}
+
+.fa-thumb-tack {
+  padding: 0 5px;
+  font-size: 16px;
+  color: #000;
+}
+
+.tasks__list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.tasks__item {
+  width: 100%;
+  list-style: none;
+  font-size: 18px;
+  display: inline-block;
+  background-color: #B2DFDB;
+  color: #000;
+}
+.tasks__item:nth-child(2n) {
+  background-color: #93d2cd;
+}
+.tasks__item button .fa {
+  color: #000;
+}
+.green .tasks__item {
+  background-color: #a8d7a9;
+}
+.green .tasks__item:nth-child(2n) {
+  background-color: #73bf76;
+}
+.violet .tasks__item {
+  background-color: #D1C4E9;
+}
+.violet .tasks__item:nth-child(2n) {
+  background-color: #b6a2dd;
+}
+.blue .tasks__item {
+  background-color: #b4bbe4;
+}
+.blue .tasks__item:nth-child(2n) {
+  background-color: #8e99d7;
+}
+
+.task__item-text {
+  display: inline-block;
+  line-height: 42px;
+  margin: 0;
+}
+
+.fa-check {
+  color: #000;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.tasks__remove {
+  border: none;
+  padding: 10px 15px;
+  float: right;
+  font-size: 18px;
+  background-color: inherit;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.tasks__remove:hover {
+  background-color: #009688;
+}
+.green .tasks__remove:hover {
+  background-color: #388E3C;
+}
+.violet .tasks__remove:hover {
+  background-color: #7c51c8;
+}
+.blue .tasks__remove:hover {
+  background-color: #3f51b5;
+}
+
+.done {
+  background-color: #009688;
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset -5px -5px 30px -10px rgba(0, 0, 0, 0.53);
+}
+.green .done {
+  background-color: #388E3C;
+}
+.violet .done {
+  background-color: #7c51c8;
+}
+.blue .done {
+  background-color: #3f51b5;
+}
+
+.done__title {
+  color: #fff;
+  padding: 20px 0;
+  font-size: 35px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.done__list {
+  padding-left: 0;
+}
+
+.color-palettes {
+  text-align: center;
+  padding: 20px;
+}
+
+.color-palettes__button-wrapper {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  vertical-align: top;
+}
+
+.teal-button, .green-button, .violet-button, .blue-button {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 50% 10% 50%;
+  box-shadow: inset 10px 10px 30px -10px rgba(0, 0, 0, 0.53);
+  background-color: #009688;
+  transition: all 0.2s ease-in-out;
+}
+.teal-button:hover, .green-button:hover, .violet-button:hover, .blue-button:hover {
+  height: 60px;
+  width: 60px;
+}
+
+.green-button {
+  background-color: #388E3C;
+}
+
+.violet-button {
+  background-color: #7c51c8;
+}
+
+.blue-button {
+  background-color: #3f51b5;
+}

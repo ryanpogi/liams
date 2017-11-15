@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>To Do app</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/indexs.css">
+
+  
+</head>
+
+<body>
+  <div class="container" id="container">
+  <div class="header">
+    <h1 class="header__title">To do list</h1>
+    <input 
+           class="header__input" 
+           id="header__input" 
+           type="text" 
+           placeholder="New thing to do">
+    </imput>
+    <button class="header__button" id="header__button">
+      Add new
+      <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div>
+    <div class="tasks">
+      <ul class="tasks__list" id="tasks__list">
+      </ul>
+    </div>
+  </div>
+  <div class="color-palettes">
+    <p class="color-palettes__title">
+      Choose your color palette
+    </p>
+    <div class="color-palettes__button-wrapper">
+    <button class="teal-button" onclick="changeColorPalette('teal')"></button>
+    </div>
+    <div class="color-palettes__button-wrapper">
+    <button class="green-button" onclick="changeColorPalette('green')"></button>
+    </div>  
+    <div class="color-palettes__button-wrapper">
+    <button class="violet-button" onclick="changeColorPalette('violet')"></button> 
+    </div> 
+    <div class="color-palettes__button-wrapper">
+    <button class="blue-button" onclick="changeColorPalette('blue')"></button>
+    </div> 
+  </div>
+</div>
+  
+    <script  src="js/indexs.js"></script>
+
+</body>
+</html>
